@@ -13,6 +13,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 </head>
@@ -129,111 +133,124 @@
 <!-- ////////////// About Us ///////////////// -->
 <section class="about" id="Home">
     <div class="about-info text-center row d-flex justify-content-center align-items-center m-0">
-        <h2 class="about-info-h2 col-12 mb-1" style=" color:#472652; font-family: 'Poppins'; font-size: 44px; font-weight: 600; line-height: 79.2px;">What is <span style="color: #CC6DEA; font-family: 'Chewy'; font-size: 44px; font-weight: 400; line-height: 79.2px; ">Conversationalists</span></h2>
-        <span class="col-10 col-lg-8 letter" style="font-weight: 400; font-size: 24px; line-height: 43.2px; font-family: Roboto; color: #000000B2;">Conversationalist is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</span>
+        <h2 class="about-info-h2 col-12 mb-1" style="color:#472652; font-family: 'Poppins'; font-size: 44px; font-weight: 600; line-height: 79.2px;">
+            What is <span style="color: #CC6DEA; font-family: 'Chewy'; font-size: 44px; font-weight: 400; line-height: 79.2px;">Conversationalists</span>
+        </h2>
+        <span class="col-10 col-lg-8 letter" style="font-weight: 400; font-size: 24px; line-height: 43.2px; font-family: Roboto; color: #000000B2;">
+            Conversationalist is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.
+        </span>
     </div>
     <div class="row mx-0 d-flex justify-content-evenly align-items-center mt-3">
-        <div class="slideshow-container mb-2 about-img-1" style="width: 600px; height: 403px; border-radius: 20px !important;">
-            <img id="slideshow-img" src="images/Rectangle 4153.png" class="col-12 px-4" style="width:100% ; height: 350px;" alt="img1">
+        <div class="slideshow-container mb-2 about-img-1 col-12 col-md-6" style="border-radius: 20px !important;">
+            <img id="slideshow-img" src="images/Rectangle 4153.png" class="img-fluid" style="border-radius: 20px;" alt="img1">
         </div>
-
-        <div class="mb-5 about-img-12" style="position: relative; width: 600px; height: 403px;">
-            <img src="images/Group 23.png" class="col-12 px-4 " style="border-radius: 20px; height: 350px;" alt="img1">
-            <div class="about-img-1-info " style="color: #fff; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+        <div class=" about-img-12 col-12 col-md-5 position-relative">
+            <img src="images/Group 23.png" class="img-fluid" style="border-radius: 20px;" alt="img1">
+            <div class="about-img-1-info" style="color: #fff; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
                 <h2 class="for-student" style="font-family: Roboto; font-weight: 600; line-height: 37.5px; font-size: 32px;">FOR STUDENTS</h2>
-                <button class="srart-learning mt-2" style="background-color: #CC6DEA;  border-radius: 80px;" type="submit">Start learning</button>
+                <button class="srart-learning mt-2" style="background-color: #CC6DEA; border-radius: 80px;" type="submit">Start learning</button>
             </div>
         </div>
-
-        <!-- <div style="display: flex; margin-top: -50px !important;"> -->
-            <div class="col-md-6 col-11 mb-5 px-lg-4" style="margin-top: -80px !important;">
-               <h3 class="every" style="font-family: Poppins; color: #104728; font-weight: 500; font-size: 36px; line-height: 57.6px;">Everything you can do in a physical <p class="can-do" style="font-family: Poppins; font-weight: 500; font-size: 36px; line-height: 57.6px; color: #CC6DEA;">you can do with <span class="conver" style="font-family: Roboto; font-weight: 700; font-size: 36px; line-height: 57.6px;">Conversationalist</span></p></h3>
-                <p class="about-span" style="font-family: Poppins; font-size: 24px; line-height: 43.2px; font-weight: 400; color: #00000099;">TOTC’s school management software helps traditional and online schools manage schedulinal classrooms all in one secure cloud-based system.</p>
-                <a href="#" class="about-link" style="color: #472652; height: 33.88px; width: 130.49px;">Learn more</a>
-            </div>
-    
-            <div class="col-md-5 col-11 mb-5 px-lg-4 about-img-1" style="position: relative;">
-                <img src="images/Group 469373.png" class="col-12 teacher-img" style="border-radius: 15px; height: 399.06px;" alt="img1">
-                <!-- <div class="background-shape" style="width: 130px; height: 130px; background-color: #5BE2E4; border-radius: 20px; position: absolute; top: -20px; left: 5px; z-index: -10;"></div>
-                <div class="back" style="width: 150px; height: 150px; background-color: #CC6DEA; border-radius: 20px; position: absolute; bottom: -20px; right: 5px; z-index: -10;"></div> -->
-            </div>
-            
-        <!-- </div> -->
+        <div class="col-12 col-md-6 mb-5  ">
+            <h3 class="every mt-3" style="font-family: Poppins; color: #104728; font-weight: 500; font-size: 24px; line-height: 57.6px;">
+                Everything you can do in a physical <p class="can-do m-0 p-0" style="font-family: Poppins; font-weight: 500; font-size: 23px; color: #CC6DEA;">you can do with <span class="conver" style="font-family: Roboto; font-weight: 700; font-size: 23px; ">Conversationalist</span></p>
+            </h3>
+            <p class="about-span" style="font-family: Poppins; font-size: 20px; font-weight: 400; color: #00000099;">
+                TOTC’s school management software helps traditional and online schools manage scheduling classrooms all in one secure cloud-based system.
+            </p>
+            <a href="#" class="about-link" style="color: #472652; height: 33.88px; width: 130.49px;">Learn more</a>
+        </div>
+        <div class=" about-img-12 col-12 col-md-5  video-about">
+            <img src="images/Group 469373.png" class="img-fluid teacher-img" style="border-radius: 15px;" alt="img1">
+        </div>
     </div>
 </section>
 
 <!-- /////////////// Courses Section ///////////////// -->
-<section class="courses-section" id="Courses" style="padding-top: 100px;">
+<section class="courses-section" id="Courses">
     <div class="courses-header mb-4 d-flex justify-content-md-between justify-content-evenly align-items-center">
-        <h3 class="courses-header-text ms-md-5" style="font-family: Roboto; font-weight: 600; font-size: 24px; line-height: 33.6px; color: #0F172A;">Top Courses</h3>
-        <a href="#" class="about-link me-5" style="color: #CC6DEA; margin-top: -10px !important; font-family: Roboto; font-weight: 500; font-size: 14px; line-height: 22.4px; margin-right: 70px !important;">See All</a>
+        <h3 class="courses-header-text ms-md-5">Top Courses</h3>
+        <a href="#" class="about-link me-5">See All</a>
     </div>
 
-    <div class="d-flex justify-content-evenly col-12 align-items-center row mx-0">
-        <div class="card" style="border: 0; width:300.14px; height: 350px;">
-            <img src="images/Rectangle 4147.png" class="card-img-top" style="border-radius: 10px !important; height: 133.92px !important; width: 293.97px;" alt="card0img1">
-            <div class="card-body">
-              <h5 class="card-title">Beginner’s Guide to Design</h5>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-span">(1200 Ratings)</span>
-              <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
-              <h5 class="card-price">$159.9</h5>
+    <div class="d-flex row mx-0">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/Rectangle 4147.png" class="card-img-top" alt="card0img1">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner’s Guide to Design</h5>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-span">(1200 Ratings)</span>
+                            <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
+                            <h5 class="card-price">$159.9</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more swiper-slide elements as needed -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/Rectangle 4147 (1).png" class="card-img-top" alt="card-img2">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner’s Guide to Design</h5>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
+                            <span class="card-span">(1200 Ratings)</span>
+                            <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
+                            <h5 class="card-price">$159.9</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/Rectangle 4147 (2).png" class="card-img-top" alt="card-img3">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner’s Guide to Design</h5>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-span">(1200 Ratings)</span>
+                            <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
+                            <h5 class="card-price">$159.9</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/Rectangle 4147 (3).png" class="card-img-top" alt="card-img4">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner’s Guide to Design</h5>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
+                            <span class="card-span">(1200 Ratings)</span>
+                            <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
+                            <h5 class="card-price">$159.9</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="card" style="border: 0; width:300.14px; height: 350px;">
-            <img src="images/Rectangle 4147 (1).png" class="card-img-top" style="border-radius: 10px !important; height: 133.92px !important;" alt="card-img2">
-            <div class="card-body">
-              <h5 class="card-title">Beginner’s Guide to Design</h5>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(235, 235, 18); font-size: 18px;"></i></span>
-              <span class="card-span">(1200 Ratings)</span>
-              <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
-              <h5 class="card-price">$159.9</h5>
-            </div>
-        </div>
-
-        <div class="card" style="border: 0; width:300.14px; height: 350px;">
-            <img src="images/Rectangle 4147 (2).png" class="card-img-top" style="border-radius: 10px !important; height: 133.92px !important;" alt="card-img3">
-            <div class="card-body">
-              <h5 class="card-title">Beginner’s Guide to Design</h5>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-span">(1200 Ratings)</span>
-              <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
-              <h5 class="card-price">$159.9</h5>
-            </div>
-        </div>
-        
-        <div class="card" style="border: 0; width:300.14px; height: 350px;">
-            <img src="images/Rectangle 4147 (3).png" class="card-img-top" style="border-radius: 10px !important; height: 133.92px !important;" alt="card-img3">
-            <div class="card-body">
-              <h5 class="card-title">Beginner’s Guide to Design</h5>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-text"><i class="fas fa-star" style="color: rgb(219, 219, 29); font-size: 18px;"></i></span>
-              <span class="card-span">(1200 Ratings)</span>
-              <p class="card-paragraph">22 Total Hours. 155 Lectures. Beginner</p>
-              <h5 class="card-price">$159.9</h5>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
 
+
+
 <!-- /////////// Review Section //////////////// -->
-<section class="courses-section" id="Review" style="padding-top: 100px;">
+<section class="courses-section container" id="Review" style="padding-top: 100px;">
     <div class="courses-header mb-4 d-flex justify-content-between align-items-center">
         <h3 class="courses-header-text ms-3" style="width: 600px; font-family: Roboto; font-size: 24px; list-style: 33.6px; font-weight: 600;">
             Founder of the conversationalist
@@ -416,5 +433,30 @@
 
     <script src="js/index.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
 </body>
 </html>

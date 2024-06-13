@@ -35,6 +35,7 @@ h5,
 h6 {
   overflow-y: hidden;
 } */
+
  section{
   overflow-y: hidden;
  }
@@ -325,7 +326,6 @@ header {
   background-color: #e700e7;
   color: #fff;
   border-radius: 20px;
-  /* padding: 10px; */
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
@@ -335,33 +335,24 @@ header {
 .srart-learning:hover {
   background-color: #c208c2;
 }
-.teacher-img{
-   width: 510.05px !important;
-   height: 400px !important;
-    /* height: 433.72px !important;
-    border-radius: 20px !important; */
-}
 @media (max-width: 768px) {
- 
-  .srart-learning{
+  .srart-learning {
     width: 150px;
     height: 45px;
     font-weight: 500 !important;
     font-size: 11px !important;
     line-height: 12.89px !important;
   }
-  .for-student{
+  .for-student {
     font-size: 16px !important;
     line-height: 18.75px !important;
     font-weight: 600 !important;
     margin-top: 50px !important;
     letter-spacing: 2px !important;
   }
-  .about-info-h2, .about-info-h2 span{
+  .about-info-h2, .about-info-h2 span {
     font-size: 32px !important;
     line-height: 20.6px !important;
-    /* text-align: center !important;
-    font-weight: 600 !important; */
   }
   .letter {
     font-size: 11px !important;
@@ -369,42 +360,24 @@ header {
     line-height: 19.8px !important;
     margin-top: 20px !important;
   }
-  /* .slideshow-container , .about-img-1{ */
-    /* height: 226.32px !important; */
-    /* width: 226.32px !important; */
-    /* margin-top: -20px; */
-    
-  /* } */
-  .about-img-12{
+  .about-img-12 {
     margin-top: -40px !important;
   }
-
-  
-  /* .about-img-12 {
-    margin-top: 30px !important;
-  } */
-  /* .about-info-h2 span{
-    font-size: 32px !important;
-    line-height: 57.6px !important;
-    text-align: center !important;
-  } */
-
- 
   .main-text {
     margin-left: 0px;
   }
   .main-text h2 {
     font-size: 30px !important;
   }
-  .every , .can-do , .conver{
+  .every, .can-do, .conver {
     font-weight: 500 !important;
     font-size: 20px !important;
     line-height: 32px !important;
   }
-  .conver{
+  .conver {
     font-weight: 700 !important;
   }
-  .about-span{
+  .about-span {
     font-weight: 400 !important;
     font-size: 12px !important;
     line-height: 21.6px !important;
@@ -413,83 +386,75 @@ header {
     margin-top: -10px !important;
     margin-bottom: -0px !important;
   }
-  .about-link{
+  .about-link {
     font-weight: 400 !important;
     font-size: 16px !important;
     line-height: 28.8px !important; 
     color: #472652  !important;
   }
-  .teacher-img{
-    width: 341.62px !important;
+  .teacher-img {
     height: 208.23px !important;
-    border-radius:  20px !important;
-    margin-top: -30px !important;
+    border-radius:  10px !important;
   }
-
-  /* .back {
-    bottom: -10px !important;
-    right: 10px !important;
-    width: 111px !important;
-    height: 102px !important;
-  }
-  .background-shape {
-    top: -10px !important;
-    left: 0px !important;
-    width: 70px !important;
-    height: 70px !important;
-  } */
-  
+}
+.video-about{
+  width: 100%;
+  margin-top: 100px;
+}
+.video-about .teacher-img{ 
+  width: 100%;
 }
 
 /* /////////////// Courses /////////////// */
+.courses-section {
+  padding-top: 100px;
+  overflow-x: hidden !important;
+}
 .courses-header-text {
-  font-size: 24px;
-  font-weight: 600;
   font-family: Roboto;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 33.6px;
-  margin-left: 35px;
+  color: #0F172A;
+}
+.about-link {
+  color: #CC6DEA;
+  margin-top: -10px !important;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.4px;
+  margin-right: 70px !important;
 }
 .card {
-  /* padding: 0px 20px !important; */
-  margin-bottom: -20px !important;
+  border: 0;
+  width: 300.14px;
+  height: 350px;
 }
-.card:hover {
-  margin-top: -35px !important;
-  transition: 1s;
+.card-img-top {
+  border-radius: 10px !important;
+  height: 133.92px !important;
+  width: 293.97px;
 }
-.card-title {
-  font-family: Roboto !important;
-  font-weight: 600 !important;
-  font-size: 18px !important;
-  line-height: 28.8px !important;
-  color: #0f172a !important;
+.card-body .card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card-body .card-text {
+  display: inline-block;
 }
 .card-span {
-  margin-left: 5px;
-  font-family: Roboto;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14.06px;
-  color: #334155;
+  display: block;
+  margin-top: 5px;
 }
 .card-paragraph {
-  font-size: 14px;
-  margin-top: 8px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 21px;
-  color: #334155;
+  margin-top: 10px;
 }
 .card-price {
-  color: #cc6dea;
-  margin-top: -8px;
-  font-family: Roboto;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
-
-
 /* ///////////// Review //////////////////// */
 .about-review-info-card {
   display: flex;
@@ -623,9 +588,7 @@ experience h3 {
   experience h3 {
    font-size: 18px !important;
   }
-  .Jacob{
-    text-wrap: wrap;
-  }
+
   .Clients , Clients div{
     font-size: 14px;
   }
@@ -636,7 +599,7 @@ experience h3 {
 
 @media (max-width: 1030px) {
   .review-card {
-    width: 45% !important;
+    min-width: 400px !important;
   }
 }
 
@@ -656,3 +619,4 @@ experience h3 {
   font-family: Roboto;
   line-height: 25.6px;
 }
+
