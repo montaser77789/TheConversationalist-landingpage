@@ -35,7 +35,9 @@ h5,
 h6 {
   overflow-y: hidden;
 } */
-
+.swiper-pagination-bullet{
+  display: none !important;
+}
  section{
   overflow-y: hidden;
  }
@@ -290,6 +292,7 @@ header {
   color: black;
 }
 
+
 /* /////////// About Section ///////////////// */
 .about,
 .about-review {
@@ -335,6 +338,10 @@ header {
 .srart-learning:hover {
   background-color: #c208c2;
 }
+.slideshow-container{
+  width: 600px ;
+  height: 403px;
+}
 @media (max-width: 768px) {
   .srart-learning {
     width: 150px;
@@ -362,6 +369,8 @@ header {
   }
   .about-img-12 {
     margin-top: -40px !important;
+    width: 600px ;
+    height: 1000px;
   }
   .main-text {
     margin-left: 0px;
@@ -392,8 +401,18 @@ header {
     line-height: 28.8px !important; 
     color: #472652  !important;
   }
+  .slideshow-container #slideshow-img{
+    height: 100% ;
+  }
+  .slideshow-vidoe{
+    height: 399px !important;
+    width: 600px;
+  
+  }
   .teacher-img {
-    height: 208.23px !important;
+    width: 100% !important;
+    height: 100% !important;
+   
     border-radius:  10px !important;
   }
 }
@@ -519,7 +538,7 @@ header {
 }
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height:403px !important;
 }
 .review-mobile span{
   text-align: start;
@@ -529,6 +548,9 @@ experience h3 {
 }
 .Clients , Clients div{
   font-size: 18px;
+}
+.experience-parent {
+gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -555,8 +577,7 @@ experience h3 {
       text-align: center;
   }
   
-  .col-12, .col-md-6 {
-  }
+
   .review-mobile{
     display: block;
     width: 70%;
@@ -591,6 +612,9 @@ experience h3 {
   .Clients , Clients div{
     font-size: 14px;
   }
+  .imge-about {
+    margin: 20px 0px !important;
+  }
   
 }
 
@@ -621,7 +645,6 @@ experience h3 {
 section {
   padding: 20px 0;
 
-  text-align: 
 }
 .icon {
   margin-left: 10px;
