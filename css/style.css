@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
   border: 0;
   outline: 0;
-  /* overflow-x: hidden !important; */
 }
 :root {
   --Primary: #fed049;
@@ -20,24 +19,6 @@ body {
   width: 100%;
   overflow-x: hidden !important;
 }
-/* img,
-h2,
-h3,
-span,
-p,
-h1,
-i,
-a,
-li,
-ul,
-h4,
-h5,
-h6 {
-  overflow-y: hidden;
-} */
-.swiper-pagination-bullet{
-  display: none !important;
-}
  section{
   overflow-y: hidden;
  }
@@ -47,8 +28,6 @@ h6 {
 }
 /*//////////// Header ////////////*/
 header {
-  /* position: fixed;
-  z-index: 999; */
   top: 0;
   left: 0;
   width: 100%;
@@ -107,7 +86,6 @@ header {
   border-radius: 20px;
   padding: 10px 20px !important;
   font-size: 13px;
-  /* height: 35px; */
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
@@ -144,7 +122,7 @@ header {
   .active-link::after {
     bottom: auto;
     top: 50%;
-    left: 25%;
+    left: 20%;
     transform: translateY(-50%) translateX(-50%);
     width: 8px;
     height: 8px;
@@ -157,7 +135,6 @@ header {
 .main {
   min-height: 100vh;
   width: 100%;
-  /* padding-top: 120px; */
   background-image: url(../images/HERO\ BANNER\ \(1\).png);
   background-position: center;
   background-repeat: no-repeat;
@@ -165,28 +142,16 @@ header {
   overflow-x: hidden !important;
 }
 .main-text {
-  /* padding: 100px 0 0 80px;
-  margin-left: 80px; */
   margin-left: 40px;
-  /* top: 215.78px; */
-  /* left: 142.52px ; */
   gap: 24px;
 }
 .main-text h2 {
   font-family: "Pacifico", cursive;
   font-weight: 700;
 }
-/* .child1 { */
-  /* margin-top: -80px !important; */
-  /* margin-left: auto !important; */
-/* } */
-/* @media (max-width: 991px) {
-  .child1{
-    margin-left: 200px !important;
-  }
-} */
 .child1 img {
   width: 100%;
+  margin-bottom: -20px;
 }
 
 @media (max-width: 991px) {
@@ -198,16 +163,12 @@ header {
     overflow-x: hidden !important;
   }
   .main-text {
-    /* margin-left: 40px;
-    gap: 24px; */
     margin-left: -60px !important;
     margin-top: 280.42px !important;
   }
   .child1 {
     display: flex !important;
     justify-content: flex-end !important;
-    /* margin-left: % !important; */
-    /* margin-right: 50px; */
     margin-top: -60px !important;
     margin-right: 0 !important;
     margin-left: auto !important;
@@ -220,7 +181,6 @@ header {
   .main-text h2 {
     font-size: 10px !important;
     font-weight: 400 !important;
-    /* line-height: 16px !important; */
   }
   .main-text p {
     font-size: 24px !important;
@@ -229,16 +189,10 @@ header {
   }
 
   .background-shape {
-    /* top: -10px; */
     left: -10px !important;
-    /* width: 150px;
-    height: 100px; */
   }
   .back {
-    /* bottom: 40px; */
     right: -10px !important;
-    /* width: 100px;
-    height: 100px; */
   }
 }
 .main-text h2 {
@@ -253,24 +207,18 @@ header {
   font-size: 15px;
   color: rgb(172, 168, 168);
   margin-bottom: 3px;
-  /* font-family:Georgia, 'Times New Roman', Times, serif; */
   letter-spacing: 1px;
 }
 .main-btn {
   text-decoration: none;
   display: inline-block;
   margin: 15px 0px;
-  /* letter-spacing: 1px; */
   text-align: center;
-  /* padding: 10px 30px; */
   width: 169px;
   height: 56px;
   border-radius: 8px;
-  /* padding: 16px 30px; */
   padding: 16px;
   gap: 8px;
-  /* font-size: 1.1em;
-  font-weight: 600; */
   border-radius: 8px;
   background-color: #5BE2E4;
   color: #fff;
@@ -280,7 +228,6 @@ header {
   line-height: 24px;
 }
 .main-btn:hover {
-  /* background-color: #39d2d4; */
   background-color: #CC6DEA;
   transition: 1s;
   cursor: default;
@@ -291,7 +238,6 @@ header {
 .main-footer h2 {
   color: black;
 }
-
 
 /* /////////// About Section ///////////////// */
 .about,
@@ -319,7 +265,6 @@ header {
   font-size: 17px;
 }
 .about-link {
-  margin-top: -50px !important;
   color: #920892;
 }
 .about-link:hover {
@@ -335,12 +280,24 @@ header {
   width: 283px;
   height: 80px;
 }
+.img-fluid {
+  max-width: 100%;
+  height:399px !important;
+  margin-top: 20px !important;
+}
 .srart-learning:hover {
   background-color: #c208c2;
 }
 .slideshow-container{
   width: 600px ;
   height: 403px;
+}
+.for-student{
+  font-size: 32px !important;
+  line-height: 37.5px !important;
+  font-weight: 600 !important;
+  margin-top: 120px !important;
+  letter-spacing: 2px !important;
 }
 @media (max-width: 768px) {
   .srart-learning {
@@ -400,6 +357,7 @@ header {
     font-size: 16px !important;
     line-height: 28.8px !important; 
     color: #472652  !important;
+    margin-right: 40px !important;
   }
   .slideshow-container #slideshow-img{
     height: 100% ;
@@ -414,6 +372,12 @@ header {
     height: 100% !important;
    
     border-radius:  10px !important;
+  }
+  .imge-about {
+    margin: 20px 0px !important;
+  }
+  .main-footer {
+    background: linear-gradient(#CC6DEA , #5BE2E4);
   }
 }
 .video-about{
@@ -436,44 +400,63 @@ header {
   line-height: 33.6px;
   color: #0F172A;
 }
-.about-link {
+.about-link2 {
   color: #CC6DEA;
-  margin-top: -10px !important;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 22.4px;
   margin-right: 70px !important;
 }
+
+/* /////////////////////// */
+.courses-header-text {
+  font-size: 24px !important;
+  font-weight: 600;
+  font-family: Roboto;
+  line-height: 33.6px;
+  margin-left: 35px;
+}
 .card {
-  border: 0;
-  width: 300.14px;
-  height: 350px;
+  margin-bottom: -20px !important;
+  border: 0 !important;
 }
-.card-img-top {
-  border-radius: 10px !important;
-  height: 133.92px !important;
-  width: 293.97px;
+.card:hover {
+  margin-top: -35px !important;
+  transition: 1s;
 }
-.card-body .card-title {
-  font-size: 16px;
-  font-weight: bold;
-}
-.card-body .card-text {
-  display: inline-block;
+.card-title {
+  font-family: Roboto !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 28.8px !important;
+  color: #0f172a !important;
 }
 .card-span {
-  display: block;
-  margin-top: 5px;
+  margin-left: 5px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #334155;
 }
 .card-paragraph {
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  color: #334155;
 }
 .card-price {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  color: #cc6dea;
+  margin-top: -8px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
 }
+
 /* ///////////// Review //////////////////// */
 .about-review-info-card {
   display: flex;
@@ -503,15 +486,8 @@ header {
   background-color: #a70aa7 !important;
 }
 
-
 .courses-section {
   padding-top: 100px;
-}
-
-.courses-header-text {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 .review-text {
@@ -538,7 +514,7 @@ header {
 }
 .img-fluid {
   max-width: 100%;
-  height:403px !important;
+  height: auto;
 }
 .review-mobile span{
   text-align: start;
@@ -554,16 +530,8 @@ gap: 20px;
 }
 
 @media (max-width: 768px) {
-  /* .courses-header-text {
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    font-family: Roboto !important;
-    line-height: 28px !important;
-    margin-left: 55px !important;
-  } */
   .courses-header-text {
-      font-size: 20px;
-      text-align: center;
+      font-size: 20px !important;
   }
   
   .review-text {
@@ -599,6 +567,13 @@ gap: 20px;
     text-align: start !important;
   }
 
+  .review-right-h3{
+    font-weight: 700 !important;
+    font-size: 35px !important;
+    font-family: IBM Plex Sans !important;
+    line-height: 48px !important;
+  }
+
   .review-span-2{
     text-align: start !important;
     font-size: 14px !important;
@@ -611,9 +586,7 @@ gap: 20px;
 
   .Clients , Clients div{
     font-size: 14px;
-  }
-  .imge-about {
-    margin: 20px 0px !important;
+    
   }
   
 }
@@ -661,6 +634,12 @@ section {
   width: 30px;
   height: 30px;
 }
+#first{
+  margin-right: -30px !important;
+}
+#middle{
+  margin-right: 20px !important;
+}
 @media (max-width: 767.98px) {
   .review-section .col-md-5,
   .review-section .col-md-7 {
@@ -690,10 +669,32 @@ section {
     border-radius: 50% !important;
   }
   #first{
-    margin-right: -30px !important;
+    margin-right: 0px !important;
   }
   #middle{
-    margin-right: 20px !important;
+    margin-right: 0px !important;
+    margin-left: -20px;
+  }
+  .explore{
+    font-size: 18px !important;
+    font-weight: 700 !important;
+  }
+  .explore-content{
+    font-weight: 400 !important;
+    font-size: 18px !important;
+  }
+  .Footer-text{
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    font-family: Chewy !important;
+  }
+  .Footer-span{
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    font-family: Roboto !important;
   }
 }
 
+.swiper-pagination-bullet{
+  display: none !important;
+}
