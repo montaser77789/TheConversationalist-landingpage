@@ -242,7 +242,6 @@ header {
 /* /////////// About Section ///////////////// */
 .about,
 .about-review {
-  min-height: 100vh;
   width: 100%;
   padding-top: 150px;
 }
@@ -636,17 +635,27 @@ gap: 20px;
 }
 #first{
   margin-right: -30px !important;
+  text-wrap: nowrap;
+
 }
 #middle{
   margin-right: 20px !important;
+  text-wrap: nowrap;
+
 }
+#last{
+  text-wrap: nowrap;
+}
+
 @media (max-width: 767.98px) {
   .review-section .col-md-5,
   .review-section .col-md-7 {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  #middle , #first {
+    font-size: 18px;
+  }
 
   .review-section .col-md-5 .my-5 {
     margin-bottom: 30px;
@@ -705,6 +714,19 @@ gap: 20px;
   display: flex;
   flex-direction: column;
 }
+.explore-parent-1{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+ .explore-parent{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+width: 60%;
+}
 
 .explore {
   font-weight: 700;
@@ -727,6 +749,9 @@ gap: 20px;
   .col-4 {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
+  }
+  .explore-parent{
+    width: 100%;
   }
 }
 
