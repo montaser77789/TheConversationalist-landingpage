@@ -642,6 +642,7 @@ gap: 20px;
 
 }
 #last{
+  margin-right: 20px;
 }
 
 @media (max-width: 767.98px) {
@@ -753,7 +754,7 @@ width: 60%;
 
   }
   .explore-parent{
-    width: 100%;
+    width: 95%;
     gap: 15px;
   }
   #middle p ,h2 , #first p ,h2 , #last p ,h2{
