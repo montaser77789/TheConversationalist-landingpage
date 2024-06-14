@@ -635,16 +635,13 @@ gap: 20px;
 }
 #first{
   margin-right: -30px !important;
-  text-wrap: nowrap;
 
 }
 #middle{
   margin-right: 20px !important;
-  text-wrap: nowrap;
 
 }
 #last{
-  text-wrap: nowrap;
 }
 
 @media (max-width: 767.98px) {
@@ -750,8 +747,17 @@ width: 60%;
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
+  .explore-parent .e2{
+
+    font-size: 16px !important;
+
+  }
   .explore-parent{
     width: 100%;
+    gap: 15px;
+  }
+  #middle p ,h2 , #first p ,h2 , #last p ,h2{
+    font-size: 17px !important;
   }
 }
 
