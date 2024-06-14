@@ -93,6 +93,9 @@ header {
 .srart:hover {
   background-color: #bc44e0;
 }
+.srart:hover {
+  box-shadow: 0px 4px 10px rgba(173, 216, 230, 0.8);
+}
 .search-icon {
   background-color: #ece7e7;
   color: #cc6dea;
@@ -757,8 +760,12 @@ width: 60%;
     width: 90%;
     gap: 15px;
   }
-  #middle p ,h2 , #first p ,h2 , #last p ,h2{
-    font-size: 17px !important;
+  #middle h2 , #first h2 , #last h2{
+    font-size: 18px !important;
+  }
+
+  #middle p  , #first p , #last p{
+    font-size: 15px !important;
   }
 }
 
