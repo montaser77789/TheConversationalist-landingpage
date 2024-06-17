@@ -58,15 +58,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- /////////// Top Of Header //////////// -->
             <div class="d-flex flex-column w-100">
-              <div class="first-row col-12 mb-0">
+              <div class="first-row col-12 mb-0 mt-2">
                 <div
-                  class="mt-lg-1 my-3 language d-flex justify-content-between align-items-between"
+                  class="mt-lg-1 mt-3 language d-flex justify-content-between align-items-between"
                 >
                   <div class="d-flex align-items-center">
                     <i class="fas fa-globe me-2 globe"></i>
                     <a class="lang" href="#">English</a>
                   </div>
-                  <div class="profile-container">
+                  <div class="profile-container" style="border-left: 1px  solid #EAFAF1; padding-left: 70px; margin-right: 15px;">
                     <img
                       class="profile-img"
                       style="border-radius: 50%"
@@ -80,16 +80,17 @@
               </div>
               <!-- ////////// Header Content ///////////// -->
               <div
-                class="Second-row col-12 d-flex flex-column flex-lg-row mt-2"
+                class="Second-row col-12 d-flex flex-column flex-lg-row "
               >
-                <div class="d-block d-flex align-items-center">
+                <div class="d-block d-flex align-items-center" style="margin-top: -22px !important;">
                   <img
-                    class="header-img me-2"
+                    class="header-img me-3"
                     style="border-radius: 8px"
                     src="images/The Conversationalists Logo 1.png"
                     width="30px"
                     height="30px"
                   />
+                  <div class="d-flex flex-column justify-content-center text-center" style="padding-top: 13px;">
                   <a
                     class="navbar-brand logo justify-content-start"
                     style="
@@ -102,26 +103,40 @@
                     href="#"
                     >The Conversationalist</a
                   >
+                  <a
+                    class="navbar-brand logo justify-content-start"
+                    style="
+                      font-family: Chewy;
+                      font-weight: 400;
+                      font-size: 12px;
+                      vertical-align: Cap height;
+                      line-height: 15.68px;
+                      margin-top: -12px;
+                    "
+                    href="#"
+                    >GAME - BASED LEARNING</a
+                  >
                 </div>
+              </div>
                 <ul
                   class="navbar-nav nav-ul me-auto mb-lg-0 ps-lg-5 col-12 col-lg-auto pb-lg-0"
                 >
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Home"
+                    <a class="nav-link active active-link" id="active" aria-current="page" href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Courses">Courses</a>
+                    <a class="nav-link" href="#">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#About-us">About us</a>
+                    <a class="nav-link" href="#">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact-us">Contact us</a>
+                    <a class="nav-link" href="#">Contact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Review">Reviews</a>
+                    <a class="nav-link" href="#">Reviews</a>
                   </li>
                 </ul>
                 <div
@@ -271,14 +286,14 @@
     </div>
 
     <!-- ////////////// About Us ///////////////// -->
-    <section class="about" id="Home">
+    <section class="about" id="Home" style="width: 1330px; margin: auto;">
       <div
         class="about-info text-center row d-flex justify-content-center align-items-center m-0"
       >
         <h2
           class="about-info-h2 col-12 mb-1"
           style="
-            color: #472652;
+            color: #000000;
             font-family: 'Poppins';
             font-size: 44px;
             font-weight: 600;
@@ -318,7 +333,7 @@
         class="row mx-0 d-flex justify-content-evenly align-items-center mt-3 mb-md-4"
       >
         <div
-          class="slideshow-container about-img-1 col-12 col-md-6"
+          class="slideshow-container about-img-1 col-11 col-md-5 col-lg-6"
           style="border-radius: 20px !important"
         >
           <img
@@ -331,7 +346,8 @@
         </div>
 
         <div
-          class="slideshow-container imge-about my-md-4 about-img-1 about-img-1-info col-12 col-md-6 position-relative"
+          class="slideshow-container imge-about my-md-4 about-img-1 about-img-1-info col-11 col-md-5 col-lg-6 position-relative"
+          id="new"
         >
           <img
             src="images/Group 23.png"
@@ -362,8 +378,7 @@
               FOR STUDENTS
             </h2>
             <button
-              class="srart-learning mt-2"
-              style="background-color: #cc6dea; border-radius: 80px"
+              class="srart-learning mt-md-2"
               type="submit"
             >
               Start learning
@@ -371,56 +386,63 @@
           </div>
         </div>
 
-        <div class="about-img-1 col-12 col-md-5">
+        <div class="about-img-1 col-11 col-11 col-md-9 col-lg-6" id="new" style="position: relative;">
+          <div class="circle"></div>
           <h3
-            class="every mt-3"
+            class="every mt-3 ps-3"
             style="
               font-family: Poppins;
-              color: #104728;
+              color: #000000;
               font-weight: 500;
-              font-size: 24px;
+              font-size: 35px;
               line-height: 57.6px;
             "
           >
             Everything you can do in a physical
             <p
-              class="can-do m-0 p-0"
+              class="can-do m-0 p-0 "
               style="
                 font-family: Poppins;
                 font-weight: 500;
-                font-size: 23px;
-                color: #cc6dea;
+                font-size: 35px;
+                line-height: 57.6px;
+                color: #CC6DEA;
               "
             >
               you can do with
               <span
                 class="conver"
-                style="font-family: Roboto; font-weight: 700; font-size: 23px"
+                style="font-family: Roboto; font-weight: 700; font-size: 35px; line-height: 57.6px;"
                 >Conversationalist</span
               >
             </p>
           </h3>
           <p
-            class="about-span"
+            class="about-span col-md-11 ps-md-3"
             style="
               font-family: Poppins;
-              font-size: 20px;
+              font-size: 24px;
               font-weight: 400;
+              letter-spacing: 2%;
               color: #00000099;
+              margin-bottom: 3px !important;
             "
           >
             TOTC’s school management software helps traditional and online
             schools manage scheduling classrooms all in one secure cloud-based
             system.
           </p>
+          <div class="circle circle2 d-flex justify-content-end"></div>
           <a
             href="#"
-            class="about-link"
-            style="color: #472652; height: 33.88px; width: 130.49px"
+            class="about-link ps-md-3"
+            id="Learn-more"
+            style="color: #000000 ; font-size: 22px; font-weight: 400; font-family: Poppins; margin-top: -20px;"
             >Learn more</a
           >
         </div>
-        <div class="slideshow-vidoe imge-about about-img-1 col-12 col-md-6">
+        
+        <div class="slideshow-vidoe imge-about about-img-1 col-11 col-11 col-md-9 col-lg-6">
           <img
             src="images/Group 469373.png"
             class="img-fluid teacher-img"
@@ -430,224 +452,225 @@
         </div>
       </div>
     </section>
-    <!-- /////////////// Courses Section ///////////////// -->
-    <section class="courses-section" id="Courses">
-      <div
-        class="courses-header mb-4 d-flex justify-content-between align-items-center"
-      >
-        <h3 class="courses-header-text ms-md-4">Top Courses</h3>
-        <a href="#" class="about-link me-md-5">See All</a>
-      </div>
+    
+   <!-- /////////////// Courses Section ///////////////// -->
+   <section class="courses-section container" id="Courses">
+    <div
+      class="courses-header mb-4 d-flex justify-content-between align-items-center"
+    >
+      <h3 class="courses-header-text ms-md-4">Top Courses</h3>
+      <a href="#" class="about-link me-md-5">See All</a>
+    </div>
 
-      <div class="d-flex row mx-0">
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-           
-            <div class="swiper-slide">
-              <div class="card">
-                <img
-                  src="images/Rectangle 4147.png"
-                  class="card-img-top"
-                  alt="card-img2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Beginner’s Guide to Design</h5>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-span">(1200 Ratings)</span>
-                  <p class="card-paragraph">
-                    22 Total Hours. 155 Lectures. Beginner
-                  </p>
-                  <h5 class="card-price">$159.9</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img
-                  src="images/Rectangle 4147 (1).png"
-                  class="card-img-top"
-                  alt="card-img2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Beginner’s Guide to Design</h5>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(235, 235, 18); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-span">(1200 Ratings)</span>
-                  <p class="card-paragraph">
-                    22 Total Hours. 155 Lectures. Beginner
-                  </p>
-                  <h5 class="card-price">$159.9</h5>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img
-                  src="images/Rectangle 4147 (2).png"
-                  class="card-img-top"
-                  alt="card-img3"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Beginner’s Guide to Design</h5>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-span">(1200 Ratings)</span>
-                  <p class="card-paragraph">
-                    22 Total Hours. 155 Lectures. Beginner
-                  </p>
-                  <h5 class="card-price">$159.9</h5>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img
-                  src="images/Rectangle 4147 (3).png"
-                  class="card-img-top"
-                  alt="card-img4"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Beginner’s Guide to Design</h5>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-text"
-                    ><i
-                      class="fas fa-star"
-                      style="color: rgb(219, 219, 29); font-size: 18px"
-                    ></i
-                  ></span>
-                  <span class="card-span">(1200 Ratings)</span>
-                  <p class="card-paragraph">
-                    22 Total Hours. 155 Lectures. Beginner
-                  </p>
-                  <h5 class="card-price">$159.9</h5>
-                </div>
+    <div class="d-flex row mx-0">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="images/Rectangle 4147.png"
+                class="card-img-top"
+                alt="card-img2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-span">(1200 Ratings)</span>
+                <p class="card-paragraph">
+                  22 Total Hours. 155 Lectures. Beginner
+                </p>
+                <h5 class="card-price">$159.9</h5>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="images/Rectangle 4147 (1).png"
+                class="card-img-top"
+                alt="card-img2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(235, 235, 18); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-span">(1200 Ratings)</span>
+                <p class="card-paragraph">
+                  22 Total Hours. 155 Lectures. Beginner
+                </p>
+                <h5 class="card-price">$159.9</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="images/Rectangle 4147 (2).png"
+                class="card-img-top"
+                alt="card-img3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-span">(1200 Ratings)</span>
+                <p class="card-paragraph">
+                  22 Total Hours. 155 Lectures. Beginner
+                </p>
+                <h5 class="card-price">$159.9</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="images/Rectangle 4147 (3).png"
+                class="card-img-top"
+                alt="card-img4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-text"
+                  ><i
+                    class="fas fa-star"
+                    style="color: rgb(219, 219, 29); font-size: 18px"
+                  ></i
+                ></span>
+                <span class="card-span">(1200 Ratings)</span>
+                <p class="card-paragraph">
+                  22 Total Hours. 155 Lectures. Beginner
+                </p>
+                <h5 class="card-price">$159.9</h5>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- /////////// Review Section //////////////// -->
     <section
       class="courses-section container"
       id="Review"
-      style="margin-top: -100px"
     >
       <div
-        class="courses-header mb-4 d-flex justify-content-between align-items-center"
+        class="courses-header mb-0 d-flex justify-content-between align-items-center"
       >
-        <h3 class="courses-header-text ms-3">
+        <h3 class="courses-header-text ms-md-3 ms-4">
           Founder of the conversationalist
         </h3>
       </div>
@@ -656,7 +679,7 @@
         class="row mx-0 d-flex justify-content-evenly align-items-center mb-2 container"
       >
         <div
-          class="col-12 col-md-4 d-flex justify-content-between align-items-start mb-4 mb-md-0"
+          class="col-12 col-md-4 d-flex justify-content-between align-items-start mb-4 mb-md-0" id="content"
         >
           <div class="d-flex justify-content-center review-img-parent mr-5">
             <img
@@ -698,33 +721,33 @@
               <span class="card-text"
                 ><i
                   class="fas fa-star"
-                  style="color: rgb(219, 219, 29); font-size: 16px"
+                  style="color: #EAB308; font-size: 16px"
                 ></i
               ></span>
               <span class="card-text"
                 ><i
                   class="fas fa-star"
-                  style="color: rgb(219, 219, 29); font-size: 16px"
+                  style="color:#EAB308; font-size: 16px"
                 ></i
               ></span>
               <span class="card-text"
                 ><i
                   class="fas fa-star"
-                  style="color: rgb(219, 219, 29); font-size: 16px"
+                  style="color: #EAB308; font-size: 16px"
                 ></i
               ></span>
               <span class="card-text"
                 ><i
                   class="fas fa-star"
-                  style="color: rgb(219, 219, 29); font-size: 16px"
+                  style="color: #EAB308; font-size: 16px"
                 ></i
               ></span>
               <span class="card-text"
                 ><i
                   class="fas fa-star"
-                  style="color: rgb(219, 219, 29); font-size: 16px"
-                ></i
-              ></span>
+                  style="color: #EAB308; font-size: 16px"
+                ></i>
+              </span>
               <span
                 class="card-span"
                 style="
@@ -749,6 +772,8 @@
                   font-family: Chewy;
                   font-weight: 400;
                   font-size: 40px;
+                  line-height: 18px ;
+                  margin-bottom: 25px !important;
                   color: #cc6dea;
                 "
               >
@@ -806,7 +831,6 @@
                 <span
                   class="card-span"
                   style="
-                    font-size: 13px;
                     font-family: Roboto;
                     font-weight: 600;
                     font-size: 12px;
@@ -818,12 +842,13 @@
               </div>
             </div>
             <div class="d-flex justify-content-center mt-3 experience-parent">
-              <div class="me-md-5 me-4">
+              <div class="me-md-5 col-md-6 me-1 ms-md-0 ms-1">
                 <div class="d-flex experience">
                   <h3
                     class="review-right-h3"
                     style="
                       line-height: 48px;
+                      font-size: 48px;
                       font-weight: 700;
                       font-family: 'IBM Plex Sans Condensed';
                     "
@@ -831,17 +856,18 @@
                     10+
                   </h3>
                   <div
-                    class="ms-2 Clients"
-                    style="font-weight: 700; color: #333"
+                    class="ms-2 mt-md-2 mt-1 Clients"
+                    style="font-weight: 700; color: #141313"
                   >
                     Years
-                    <div style="font-size: 18px; font-weight: 700">
+                    <div class="Clients" style="font-size: 18px; font-weight: 700">
                       experience...
                     </div>
                   </div>
                 </div>
+                <div id="exper">
                 <span
-                  class="review-span-2"
+                  class="review-span-2 col-md-12 pe-md-5"
                   style="
                     color: #141313;
                     font-family: Roboto;
@@ -852,10 +878,11 @@
                   "
                 >
                   Hello there! My name is
-                  <span class="Jacob" style="color: #880688">Jacob Jones</span>.
-                  I am a web designer & developer, and I'm very passionate and
-                  dedicated to my work.
+                  <span class="Jacob" style="color: #B86ADF">Jacob Jones.</span>
+                  <p class="Jacob2">I am a web designer & developer, and I'm very passionate and
+                  dedicated to my work.</p>
                 </span>
+                </div>
               </div>
               <div>
                 <div class="d-flex experience">
@@ -870,11 +897,11 @@
                     14
                   </h3>
                   <div
-                    class="ms-2 Clients"
+                    class="ms-2 mt-md-2 mt-1 Clients"
                     style="font-weight: 700; color: #333"
                   >
                     Clients
-                    <div>Worldwide...</div>
+                    <div class="Clients">Worldwide...</div>
                   </div>
                 </div>
                 <span
@@ -900,7 +927,7 @@
     </section>
 
     <!-- ///////// Review Section //////////// -->
-    <section class="about-review" id="About-us">
+    <section class="about-review container" id="About-us">
       <div
         class="about-review-info-card row mx-0 d-flex justify-content-evenly align-items-center"
       >
@@ -941,7 +968,7 @@
 
         <div class="about-review-info-card d-flex mb-5">
           <div
-            class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
+            class="review-card ps-2 col-10 col-md-5 col-lg-4"
             style="border: 1px solid #8b8b8b46; border-radius: 15px"
           >
             <h2
@@ -1167,167 +1194,204 @@
       </div>
     </section>
 
-    <!-- ///////// Contact Us Section //////////// -->
-    <section
-      class="Contact mb-5"
-      id="contact-us"
-      style="width: 100%; "
-    >
-      <div class="d-flex row mx-0 justify-content-center align-items-center">
-        <div
-          class="col-md-5 col-10 d-flex flex-column justify-content-center align-items-center ps-md-5 mb-4"
+   <!-- ///////// Contact Us Section //////////// -->
+   <section class="Contact mb-5" id="contact-us" style="width: 100%">
+    <div class="d-flex row mx-0 justify-content-center align-items-center">
+      <div
+        class="col-md-4 col-10 d-flex flex-column justify-content-center  ps-md-5 mb-4"
+      >
+        <h2
+          style="
+            color: #cc6dea;
+            font-weight: 700;
+            font-size: 40px;
+            font-family: Roboto;
+            line-height: 48px;
+          "
         >
-          <h2
-            style="
-              color: #cc6dea;
-              font-weight: 700;
-              font-size: 40px;
-              font-family: Roboto;
-              line-height: 48px;
-            "
-          >
-            Contact US
-          </h2>
-          <p
-            style="
-              font-weight: 400;
-              color: #000;
-              font-size: 16px;
-              font-family: Roboto;
-              line-height: 24px;
-            "
-          >
-            Cooperate with technical support to help us
-          </p>
-        </div>
-
-        <div
-          class="col-md-6 col-12 mt-md-5 d-flex flex-column align-items-center"
+          Contact US
+        </h2>
+        <p
+          style="
+            font-weight: 400;
+            color: #000;
+            font-size: 16px;
+            font-family: Roboto;
+            line-height: 24px;
+          "
         >
-          <div class="mb-4 col-10">
-            <label
-              for="exampleFormControlInput1"
-              class="form-label"
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #104728;
-                font-family: Roboto;
-              "
-              >Full Name</label
-            >
-            <input
-              type="email"
-              required
-              class="form-control mb-2"
-              id="exampleFormControlInput1"
-              placeholder="Esther Howard"
-            />
-            <span
-              class="ms-1"
-              style="
-                color: #00000080;
-                font-family: Roboto;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
-              "
-              >Required</span
-            >
-          </div>
+          Cooperate with technical support to help us
+        </p>
+      </div>
 
-          <div class="mb-4 col-10">
-            <label
-              for="exampleFormControlInput2"
-              class="form-label"
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #104728;
-                font-family: Roboto;
-              "
-              >Email</label
-            >
+      <div
+        class="col-md-6 col-12 mt-md-5 d-flex flex-column align-items-center"
+      >
+        <div class="mb-4 col-10">
+          <label
+            for="exampleFormControlInput1"
+            class="form-label"
+            style="
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: #104728;
+              font-family: Roboto;
+            "
+            >Full Name</label
+          >
+          <div
+            class="form-control d-flex justify-content-between"
+            id="inputBox1"
+          >
             <input
               type="text"
               required
-              class="form-control mb-2"
+              id="exampleFormControlInput1"
+              placeholder="Esther Howard"
+              style="width: 100%; padding-right: 30px"
+              onfocus="addShadow('inputBox1')"
+              onblur="removeShadow('inputBox1')"
+            />
+            <span
+              class="clear-icon"
+              onclick="clearInput('exampleFormControlInput1')"
+            >
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+          <span
+            class="ms-1"
+            style="
+              color: #00000080;
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+            "
+            >Required</span
+          >
+        </div>
+
+        <div class="mb-4 col-10">
+          <label
+            for="exampleFormControlInput2"
+            class="form-label"
+            style="
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: #104728;
+              font-family: Roboto;
+            "
+            >Email</label
+          >
+          <div
+            class="form-control d-flex justify-content-between"
+            id="inputBox2"
+          >
+            <input
+              type="text"
+              required
               id="exampleFormControlInput2"
               placeholder="debra.holt@example.com"
+              style="width: 100%; padding-right: 30px"
+              onfocus="addShadow('inputBox2')"
+              onblur="removeShadow('inputBox2')"
             />
             <span
-              class="ms-1"
-              style="
-                color: #00000080;
-                font-family: Roboto;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
-              "
-              >Required</span
+              class="clear-icon"
+              onclick="clearInput('exampleFormControlInput2')"
             >
+              <i class="fas fa-times"></i>
+            </span>
           </div>
-
-          <div class="mb-5 col-10">
-            <label
-              for="exampleFormControlInput3"
-              class="form-label"
-              style="
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #104728;
-                font-family: Roboto;
-              "
-              >Message</label
-            >
+          <span
+            class="ms-1"
+            style="
+              color: #00000080;
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+            "
+            >Required</span
+          >
+        </div>
+        <div class="mb-5 col-10">
+          <label
+            for="exampleFormControlInput3"
+            class="form-label"
+            style="
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: #104728;
+              font-family: Roboto;
+            "
+            >Message</label
+          >
+          <div
+            class="form-control d-flex justify-content-between"
+            id="inputBox3"
+          >
             <input
-              type="email"
+              type="text"
               required
-              class="form-control mb-2"
               id="exampleFormControlInput3"
               placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+              style="width: 100%; padding-right: 30px"
+              onfocus="addShadow('inputBox3')"
+              onblur="removeShadow('inputBox3')"
             />
             <span
-              class="ms-1"
-              style="
-                color: #00000080;
-                font-family: Roboto;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
-              "
-              >Required</span
+              class="clear-icon"
+              onclick="clearInput('exampleFormControlInput3')"
             >
+              <i class="fas fa-times"></i>
+            </span>
           </div>
-          <div class="d-flex justify-content-center col-10">
-            <button
-              class="btn col-md-5 col-8"
-              style="
-                background-color: #cc6dea;
-                color: #fff;
-                padding: 12px;
-                height: Hug (48px);
-                width: Fixed (240px);
-              "
-            >
-              Contact us
-            </button>
-          </div>
+          <span
+            class="ms-1"
+            style="
+              color: #00000080;
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+            "
+            >Required</span
+          >
+        </div>
+
+        <div class="d-flex justify-content-center col-10">
+          <button
+            class="btn col-md-5 col-8"
+            style="
+              background-color: #cc6dea;
+              color: #fff;
+              padding: 12px;
+              height: Hug (48px);
+              width: Fixed (240px);
+            "
+          >
+            Contact us
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+
+
+
 
     <!-- ////////// Footer //////////// -->
-    <section class=" mb-5">
+    <section class="container mb-5">
       <div
-        class=""
         style="
           border: 1px #efe7f9 solid;
           padding-top: 30px;
-          width: 98%;
           overflow-x: hidden;
         "
       >
