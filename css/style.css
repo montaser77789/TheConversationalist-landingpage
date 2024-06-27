@@ -183,7 +183,7 @@ header {
   .child1 {
     display: flex !important;
     justify-content: flex-end !important;
-    margin-top: -20px !important;
+    margin-top: -60px !important;
     margin-right: 0 !important;
     margin-left: auto !important;
   }
@@ -560,7 +560,12 @@ header {
 .fa-star {
   color: #eab308 !important;
 }
-
+.review-mobile{
+  display: none;
+}
+.review-pc{
+  display: block;
+}
 @media (max-width: 768px) {
   .courses-section {
     padding-top: 30px;
@@ -568,6 +573,12 @@ header {
   }
   .courses-header-text {
     font-size: 20px !important;
+  }
+  .review-mobile {
+    display: block;
+  }
+  .review-pc{
+    display: none;
   }
 
   .review-text {
@@ -642,15 +653,11 @@ header {
   }
 }
 
-@media (max-width: 1030px) {
-  .review-card {
-    min-width: 400px !important;
-  }
-}
 
 @media (max-width: 654px) {
   .review-card {
     width: 98% !important;
+    flex-wrap: wrap;
   }
   .courses-header-text {
     margin: 0 5px !important;
@@ -665,9 +672,9 @@ header {
 }
 
 .clear-icon {
-  display: flex;
-  justify-content: center;
+  display: none; 
   align-items: center;
+  justify-content: center;
   color: #667085;
   width: 20px;
   height: 20px;
@@ -677,6 +684,8 @@ header {
 }
 .clear-icon .fas {
   font-size: 12px;
+
+
 }
 .box-shadow {
   box-shadow: 0px 4px 10px rgba(173, 216, 230, 0.8);
