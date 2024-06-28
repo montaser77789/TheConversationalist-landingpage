@@ -38,35 +38,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
+    <header style="background-color: transparent !important; background-color: #fff !important;">
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary px-md-5 d-flex flex-column m-0 justify-content-between"
-        style="background-color: #fff !important; width: 100%"
+        style="width: 100%; background-color: #fff !important;"
+        id="header_color"
       >
-        <div class="container-fluid header">
+        <div class="container header">
           <button
-            class="navbar-toggler botton"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          class="navbar-toggler botton collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 9999;">
             <!-- /////////// Top Of Header //////////// -->
             <div class="d-flex flex-column w-100">
+              <h2 class="x_header d-lg-none d-md-block menu-icon">X</h2>
+              <!-- /////////////////////// -->
+              <div
+              class="d-block d-flex d-lg-none mx-auto align-items-center head_img"
+            >
+              <img
+                class="header-img me-3"
+                style="border-radius: 8px"
+                src="images/The Conversationalists Logo 1.png"
+                width="40px"
+                height="40px"
+              />
+              <div
+                class="d-flex flex-column justify-content-center text-center header_up"
+                style="padding-top: 0px"
+              >
+                <a
+                  class="navbar-brand logo justify-content-start"
+                  style="
+                    font-family: Chewy;
+                    font-weight: 400;
+                    font-size: 24px;
+                    vertical-align: Cap height;
+                    line-height: 31.36px;
+                  "
+                  href="#"
+                  >The Conversationalists</a
+                >
+                <a
+                  class="navbar-brand logo justify-content-start"
+                  style="
+                    font-family: Chewy;
+                    font-weight: 400;
+                    font-size: 12px;
+                    vertical-align: Cap height;
+                    line-height: 15.68px;
+                    margin-top: -12px;
+                  "
+                  href="#"
+                  >GAME - BASED LEARNING</a
+                >
+              </div>
+            </div>
+              <!-- /////////////////////// -->
               <div class="first-row col-12 mb-0 mt-2">
                 <div
                   class="mt-lg-1 mt-3 language d-flex justify-content-between align-items-between"
                 >
                   <div class="d-flex align-items-center">
-                    <i class="fas fa-globe me-2 globe"></i>
+                    <img
+                      src="images/Vector.svg"
+                      class="globe"
+                      width="25.8px"
+                      height="24px"
+                    />
                     <a class="lang" href="#">English</a>
                   </div>
-                  <div class="profile-container" style="border-left: 1px  solid #EAFAF1; padding-left: 70px; margin-right: 15px;">
+                  <div
+                    class="profile-container"
+                    style="
+                      border-left: 1px solid #eafaf1;
+                      padding-left: 70px;
+                      margin-right: 15px;
+                    "
+                  >
                     <img
                       class="profile-img"
                       style="border-radius: 50%"
@@ -79,58 +138,75 @@
                 </div>
               </div>
               <!-- ////////// Header Content ///////////// -->
-              <div
-                class="Second-row col-12 d-flex flex-column flex-lg-row "
-              >
-                <div class="d-block d-flex align-items-center" style="margin-top: -22px !important;">
+              <div class="Second-row col-12 d-flex flex-column flex-lg-row pb-lg-2">
+                <div
+              class="ms-lg-auto me-3 d-flex d-lg-none align-items-center justify-content-end header-button2"
+              style="margin-top: -15px !important; margin-bottom: 20px !important;"
+            >
+              <button class="srart me-3" type="submit">
+                Start learning
+              </button>
+              <i class="fas fa-search search-icon"></i>
+            </div>
+                <div
+                  class="d-block d-flex align-items-center"
+                  style="margin-top: -22px !important"
+                >
                   <img
-                    class="header-img me-3"
+                    class="header-img me-3 d-none d-lg-block"
                     style="border-radius: 8px"
                     src="images/The Conversationalists Logo 1.png"
-                    width="30px"
-                    height="30px"
+                    width="40px"
+                    height="40px"
                   />
-                  <div class="d-flex flex-column justify-content-center text-center" style="padding-top: 13px;">
-                  <a
-                    class="navbar-brand logo justify-content-start"
-                    style="
-                      font-family: Chewy;
-                      font-weight: 400;
-                      font-size: 24px;
-                      vertical-align: Cap height;
-                      line-height: 31.36px;
-                    "
-                    href="#"
-                    >The Conversationalist</a
+                  <div
+                    class="d-lg-flex d-none flex-column justify-content-center text-center header_up"
+                    style="padding-top: 0px"
                   >
-                  <a
-                    class="navbar-brand logo justify-content-start"
-                    style="
-                      font-family: Chewy;
-                      font-weight: 400;
-                      font-size: 12px;
-                      vertical-align: Cap height;
-                      line-height: 15.68px;
-                      margin-top: -12px;
-                    "
-                    href="#"
-                    >GAME - BASED LEARNING</a
-                  >
+                    <a
+                      class="navbar-brand logo justify-content-start"
+                      style="
+                        font-family: Chewy;
+                        font-weight: 400;
+                        font-size: 24px;
+                        vertical-align: Cap height;
+                        line-height: 31.36px;
+                      "
+                      href="#"
+                      >The Conversationalists</a
+                    >
+                    <a
+                      class="navbar-brand logo justify-content-start"
+                      style="
+                        font-family: Chewy;
+                        font-weight: 400;
+                        font-size: 12px;
+                        vertical-align: Cap height;
+                        line-height: 15.68px;
+                        margin-top: -12px;
+                      "
+                      href="#"
+                      >GAME - BASED LEARNING</a
+                    >
+                  </div>
                 </div>
-              </div>
                 <ul
                   class="navbar-nav nav-ul me-auto mb-lg-0 ps-lg-5 col-12 col-lg-auto pb-lg-0"
                 >
                   <li class="nav-item">
-                    <a class="nav-link active active-link" id="active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active active-link"
+                      id="active"
+                      aria-current="page"
+                      href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
+                    <a class="nav-link" href="#Courses">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#Home2">About us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact us</a>
@@ -140,7 +216,7 @@
                   </li>
                 </ul>
                 <div
-                  class="ms-lg-auto me-3 d-flex align-items-center justify-content-lg-end header-button"
+                  class="ms-lg-auto me-3 d-lg-flex d-none align-items-center justify-content-end header-button"
                 >
                   <button class="srart me-3" type="submit">
                     Start learning
@@ -155,7 +231,7 @@
     </header>
 
     <!-- ///////////////////// Home Section /////////////////// -->
-    <section class="main" id="Home" style="width: 100%">
+    <section class="main container" id="Home" style="width: 100vw">
       <div class="row mx-0 d-flex justify-content-evenly align-items-center">
         <div class="main-text col-lg-6 col-11" style="margin-right: -15%">
           <h2
@@ -174,7 +250,7 @@
           <p
             class="col-12"
             style="
-              color: #00000099;
+              color: #000000CC;
               font-size: 16px;
               font-weight: 400;
               line-height: 25.6px;
@@ -188,17 +264,17 @@
           <button class="main-btn">Subscriptions</button>
         </div>
 
-        <div class="child1 col-lg-4 col-11 d-flex" style="margin-right: 10%">
+        <div class="child1 col-lg-4 col-11 d-flex align-items-end" style="margin-right: 10%;">
           <img
             class="col-12"
-            src="images/beautiful-student-girl-wearing-backpack-holding-notebook-isolated-white-background 1 (1).png"
+            src="images/beautiful-student-girl-wearing-backpack-holding-notebook-isolated-white-background 1 (2).png"
           />
         </div>
       </div>
     </section>
 
     <div
-      class="main-footer d-flex justify-content-evenly align-items-center row m-0"
+      class="main-footer container m-auto d-flex justify-content-evenly align-items-center row m-0"
       style="min-height: 149px; margin-top: 0px"
     >
       <div
@@ -221,7 +297,7 @@
       ></div>
       <div
         class="d-block d-md-none col-7 mb-2"
-        style="height: 1px; border-bottom: 2px solid #ffff; z-index: 10"
+        style="height: 1px; border-bottom: 2px solid #ffff;"
       ></div>
 
       <div
@@ -244,7 +320,7 @@
       ></div>
       <div
         class="d-block d-md-none col-7 mb-2"
-        style="height: 1px; border-bottom: 2px solid #ffff; z-index: 10"
+        style="height: 1px; border-bottom: 2px solid #ffff;"
       ></div>
 
       <div
@@ -267,7 +343,7 @@
       ></div>
       <div
         class="d-block d-md-none col-7 mb-2"
-        style="height: 1px; border-bottom: 2px solid #ffff; z-index: 10"
+        style="height: 1px; border-bottom: 2px solid #ffff;"
       ></div>
 
       <div
@@ -281,14 +357,14 @@
       </div>
       <div
         class="d-block d-md-none col-7 mb-3"
-        style="height: 1px; border-bottom: 2px solid #ffff; z-index: 10"
+        style="height: 1px; border-bottom: 2px solid #ffff;"
       ></div>
     </div>
 
     <!-- ////////////// About Us ///////////////// -->
-    <section class="about" id="Home" style="width: 1330px; margin: auto;">
+    <section class="about container container2" id="Home2" style="width: 1330px; margin: auto !important">
       <div
-        class="about-info text-center row d-flex justify-content-center align-items-center m-0"
+        class="about-info text-center row d-flex justify-content-center align-items-center mx-auto"
       >
         <h2
           class="about-info-h2 col-12 mb-1"
@@ -330,11 +406,11 @@
       </div>
 
       <div
-        class="row mx-0 d-flex justify-content-evenly align-items-center mt-3 mb-md-4"
+        class="row mx-0 d-flex justify-content-evenly align-items-center mt-3 mb-md-4 "
       >
         <div
-          class="slideshow-container about-img-1 col-11 col-md-5 col-lg-6"
-          style="border-radius: 20px !important"
+          class="slideshow-container mx-auto about-img-1 col-11 col-md-9 col-lg-6"
+          style="border-radius: 20px !important; z-index: -10 !important;"
         >
           <img
             id="slideshow-img"
@@ -346,8 +422,9 @@
         </div>
 
         <div
-          class="slideshow-container imge-about my-md-4 about-img-1 about-img-1-info col-11 col-md-5 col-lg-6 position-relative"
+          class="slideshow-container imge-about my-md-4 about-img-1 about-img-1-info col-11 col-md-9 col-lg-6 position-relative"
           id="new"
+          style="z-index: -10 !important;"
         >
           <img
             src="images/Group 23.png"
@@ -377,16 +454,17 @@
             >
               FOR STUDENTS
             </h2>
-            <button
-              class="srart-learning mt-md-2"
-              type="submit"
-            >
+            <button class="srart-learning mt-md-2" type="submit">
               Start learning
             </button>
           </div>
         </div>
 
-        <div class="about-img-1 col-11 col-11 col-md-9 col-lg-6" id="new" style="position: relative;">
+        <div
+          class="about-img-1 col-11 col-11 col-md-9 col-lg-6"
+          id="new"
+          style="position: relative; z-index: -10 !important;"
+        >
           <div class="circle"></div>
           <h3
             class="every mt-3 ps-3"
@@ -394,25 +472,30 @@
               font-family: Poppins;
               color: #000000;
               font-weight: 500;
-              font-size: 35px;
+              font-size: 29px;
               line-height: 57.6px;
             "
           >
             Everything you can do in a physical
             <p
-              class="can-do m-0 p-0 "
+              class="can-do m-0 p-0"
               style="
                 font-family: Poppins;
                 font-weight: 500;
-                font-size: 35px;
+                font-size: 29px;
                 line-height: 57.6px;
-                color: #CC6DEA;
+                color: #cc6dea;
               "
             >
               you can do with
               <span
                 class="conver"
-                style="font-family: Roboto; font-weight: 700; font-size: 35px; line-height: 57.6px;"
+                style="
+                  font-family: Roboto;
+                  font-weight: 700;
+                  font-size: 29px;
+                  line-height: 57.6px;
+                "
                 >Conversationalist</span
               >
             </p>
@@ -437,12 +520,21 @@
             href="#"
             class="about-link ps-md-3"
             id="Learn-more"
-            style="color: #000000 ; font-size: 22px; font-weight: 400; font-family: Poppins; margin-top: -20px;"
+            style="
+              color: #000000;
+              font-size: 22px;
+              font-weight: 400;
+              font-family: Poppins;
+              margin-top: -20px;
+            "
             >Learn more</a
           >
         </div>
-        
-        <div class="slideshow-vidoe imge-about about-img-1 col-11 col-11 col-md-9 col-lg-6">
+
+        <div
+          class="slideshow-vidoe imge-about about-img-1 col-11 col-11 col-md-9 col-lg-6"
+          style="z-index: -10 !important;"
+        >
           <img
             src="images/Group 469373.png"
             class="img-fluid teacher-img"
@@ -452,7 +544,7 @@
         </div>
       </div>
     </section>
-    
+
    <!-- /////////////// Courses Section ///////////////// -->
    <section class="courses-section container" id="Courses">
     <div
@@ -466,7 +558,7 @@
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
          
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide2"  style="z-index: -10 !important;">
             <div class="card">
               <img
                 src="images/Rectangle 4147.png"
@@ -474,37 +566,12 @@
                 alt="card-img2"
               />
               <div class="card-body">
-                <h5 class="card-title">Beginner’s Guide to Design</h5>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
+                <h5 class="card-title" id="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
                 <span class="card-span">(1200 Ratings)</span>
                 <p class="card-paragraph">
                   22 Total Hours. 155 Lectures. Beginner
@@ -514,7 +581,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide2">
             <div class="card">
               <img
                 src="images/Rectangle 4147 (1).png"
@@ -522,37 +589,12 @@
                 alt="card-img2"
               />
               <div class="card-body">
-                <h5 class="card-title">Beginner’s Guide to Design</h5>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(235, 235, 18); font-size: 18px"
-                  ></i
-                ></span>
+                <h5 class="card-title" id="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
                 <span class="card-span">(1200 Ratings)</span>
                 <p class="card-paragraph">
                   22 Total Hours. 155 Lectures. Beginner
@@ -561,7 +603,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide2">
             <div class="card">
               <img
                 src="images/Rectangle 4147 (2).png"
@@ -569,37 +611,12 @@
                 alt="card-img3"
               />
               <div class="card-body">
-                <h5 class="card-title">Beginner’s Guide to Design</h5>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
+                <h5 class="card-title" id="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
                 <span class="card-span">(1200 Ratings)</span>
                 <p class="card-paragraph">
                   22 Total Hours. 155 Lectures. Beginner
@@ -608,7 +625,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide2">
             <div class="card">
               <img
                 src="images/Rectangle 4147 (3).png"
@@ -616,37 +633,12 @@
                 alt="card-img4"
               />
               <div class="card-body">
-                <h5 class="card-title">Beginner’s Guide to Design</h5>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 18px"
-                  ></i
-                ></span>
+                <h5 class="card-title" id="card-title">Beginner’s Guide to Design</h5>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
                 <span class="card-span">(1200 Ratings)</span>
                 <p class="card-paragraph">
                   22 Total Hours. 155 Lectures. Beginner
@@ -661,16 +653,12 @@
     </div>
   </section>
 
-
     <!-- /////////// Review Section //////////////// -->
-    <section
-      class="courses-section container"
-      id="Review"
-    >
+    <section class="courses-section container" id="Review">
       <div
         class="courses-header mb-0 d-flex justify-content-between align-items-center"
       >
-        <h3 class="courses-header-text ms-md-3 ms-4">
+        <h3 class="courses-header-text mt-md-auto mt-4 ms-md-3 ms-4">
           Founder of the conversationalist
         </h3>
       </div>
@@ -679,13 +667,14 @@
         class="row mx-0 d-flex justify-content-evenly align-items-center mb-2 container"
       >
         <div
-          class="col-12 col-md-4 d-flex justify-content-between align-items-start mb-4 mb-md-0" id="content"
+          class="col-12 col-md-4 d-flex justify-content-between align-items-start mb-4 mb-md-0"
+          id="content"
         >
           <div class="d-flex justify-content-center review-img-parent mr-5">
             <img
               src="images/Rectangle 4155.png"
               class="review-img img-fluid"
-              style="border-bottom-right-radius: 20px"
+              style="border-bottom-right-radius: 20px; "
               alt="review"
             />
           </div>
@@ -718,36 +707,11 @@
               laborum.
             </span>
             <div class="d-flex mt-1 align-items-center">
-              <span class="card-text"
-                ><i
-                  class="fas fa-star"
-                  style="color: #EAB308; font-size: 16px"
-                ></i
-              ></span>
-              <span class="card-text"
-                ><i
-                  class="fas fa-star"
-                  style="color:#EAB308; font-size: 16px"
-                ></i
-              ></span>
-              <span class="card-text"
-                ><i
-                  class="fas fa-star"
-                  style="color: #EAB308; font-size: 16px"
-                ></i
-              ></span>
-              <span class="card-text"
-                ><i
-                  class="fas fa-star"
-                  style="color: #EAB308; font-size: 16px"
-                ></i
-              ></span>
-              <span class="card-text"
-                ><i
-                  class="fas fa-star"
-                  style="color: #EAB308; font-size: 16px"
-                ></i>
-              </span>
+              <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+              <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+              <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+              <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+              <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
               <span
                 class="card-span"
                 style="
@@ -772,7 +736,7 @@
                   font-family: Chewy;
                   font-weight: 400;
                   font-size: 40px;
-                  line-height: 18px ;
+                  line-height: 18px;
                   margin-bottom: 25px !important;
                   color: #cc6dea;
                 "
@@ -798,42 +762,18 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </span>
               <div class="d-flex mt-1 align-items-center">
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 16px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 16px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 16px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 16px"
-                  ></i
-                ></span>
-                <span class="card-text"
-                  ><i
-                    class="fas fa-star"
-                    style="color: rgb(219, 219, 29); font-size: 16px"
-                  ></i
-                ></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
+                <span class="card-text"><img src="images/Star 3.svg" width="20px" height="20px"></span>
                 <span
-                  class="card-span"
+                  class="card-span rate"
                   style="
                     font-family: Roboto;
                     font-weight: 600;
                     font-size: 12px;
+                    margin-top: 2px !important;
                     line-height: 14.06px;
                     color: #334155;
                   "
@@ -860,28 +800,35 @@
                     style="font-weight: 700; color: #141313"
                   >
                     Years
-                    <div class="Clients" style="font-size: 18px; font-weight: 700">
+                    <div
+                      class="Clients"
+                      style="font-size: 18px; font-weight: 700"
+                    >
                       experience...
                     </div>
                   </div>
                 </div>
                 <div id="exper">
-                <span
-                  class="review-span-2 col-md-12 pe-md-5"
-                  style="
-                    color: #141313;
-                    font-family: Roboto;
-                    font-weight: 400;
-                    text-align: start;
-                    font-size: 18px;
-                    line-height: 24px;
-                  "
-                >
-                  Hello there! My name is
-                  <span class="Jacob" style="color: #B86ADF">Jacob Jones.</span>
-                  <p class="Jacob2">I am a web designer & developer, and I'm very passionate and
-                  dedicated to my work.</p>
-                </span>
+                  <span
+                    class="review-span-2 col-md-12 pe-md-5"
+                    style="
+                      color: #141313;
+                      font-family: Roboto;
+                      font-weight: 400;
+                      text-align: start;
+                      font-size: 18px;
+                      line-height: 24px;
+                    "
+                  >
+                    Hello there! My name is
+                    <span class="Jacob" style="color: #b86adf"
+                      >Jacob Jones.</span
+                    >
+                    <p class="Jacob2">
+                      I am a web designer & developer, and I'm very passionate
+                      and dedicated to my work.
+                    </p>
+                  </span>
                 </div>
               </div>
               <div>
@@ -926,7 +873,6 @@
       </div>
     </section>
 
-    <!-- ///////// Review Section //////////// -->
     <section class="about-review container review-pc" id="About-us">
       <div
         class="about-review-info-card row mx-0 d-flex justify-content-evenly align-items-center"
@@ -1021,121 +967,118 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div
-            class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
-            style="border: 1px solid #8b8b8b46; border-radius: 15px"
+          </div><div
+          class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
+          style="border: 1px solid #8b8b8b46; border-radius: 15px"
+        >
+          <h2
+            class="ps-2"
+            style="
+              color: #c208c2b6;
+              font-size: 95px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              margin-top: -20px;
+              margin-bottom: -15px;
+            "
           >
-            <h2
-              class="ps-2"
+            ،،
+          </h2>
+          <p class="about-review-info-card-span ps-2">
+            "Byway's tech courses are top-notch! As someone who's always
+            looking to stay ahead in the rapidly evolving tech world, I
+            appreciate the up-to-date content and engaging multimedia.
+          </p>
+          <div class="d-flex ps-2">
+            <img
+              class="profile-img"
+              style="border-radius: 50%; margin-left: 5px"
+              src="images/Ellipse 612.png"
+              width="60px"
+              height="60px"
+            />
+            <div
+              class="ms-2 mb-3"
               style="
-                color: #c208c2b6;
-                font-size: 95px;
-                font-weight: 700;
-                letter-spacing: 0px;
-                margin-top: -20px;
-                margin-bottom: -15px;
+                font-size: 18px;
+                margin-top: 0px;
+                font-weight: 600;
+                font-family: Inter;
+                line-height: 28.8px;
               "
             >
-              ،،
-            </h2>
-            <p class="about-review-info-card-span ps-2">
-              "Byway's tech courses are top-notch! As someone who's always
-              looking to stay ahead in the rapidly evolving tech world, I
-              appreciate the up-to-date content and engaging multimedia.
-            </p>
-            <div class="d-flex ps-2">
-              <img
-                class="profile-img"
-                style="border-radius: 50%; margin-left: 5px"
-                src="images/Ellipse 612.png"
-                width="60px"
-                height="60px"
-              />
+              Jane Doe
               <div
-                class="ms-2 mb-3"
                 style="
-                  font-size: 18px;
-                  margin-top: 0px;
-                  font-weight: 600;
+                  font-weight: 400;
+                  font-size: 14px;
                   font-family: Inter;
-                  line-height: 28.8px;
+                  line-height: 21px;
+                  color: #334155;
                 "
               >
-                Jane Doe
-                <div
-                  style="
-                    font-weight: 400;
-                    font-size: 14px;
-                    font-family: Inter;
-                    line-height: 21px;
-                    color: #334155;
-                  "
-                >
-                  Designer
-                </div>
+                Designer
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
-            style="border: 1px solid #8b8b8b46; border-radius: 15px"
+        <div
+          class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
+          style="border: 1px solid #8b8b8b46; border-radius: 15px"
+        >
+          <h2
+            class="ps-2"
+            style="
+              color: #c208c2b6;
+              font-size: 95px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              margin-top: -20px;
+              margin-bottom: -15px;
+            "
           >
-            <h2
-              class="ps-2"
+            ،،
+          </h2>
+          <p class="about-review-info-card-span ps-2">
+            "Byway's tech courses are top-notch! As someone who's always
+            looking to stay ahead in the rapidly evolving tech world, I
+            appreciate the up-to-date content and engaging multimedia.
+          </p>
+          <div class="d-flex ps-2">
+            <img
+              class="profile-img"
+              style="border-radius: 50%; margin-left: 5px"
+              src="images/Ellipse 613.png"
+              width="60px"
+              height="60px"
+            />
+            <div
+              class="ms-2 mb-3"
               style="
-                color: #c208c2b6;
-                font-size: 95px;
-                font-weight: 700;
-                letter-spacing: 0px;
-                margin-top: -20px;
-                margin-bottom: -15px;
+                font-size: 18px;
+                margin-top: 0px;
+                font-weight: 600;
+                font-family: Inter;
+                line-height: 28.8px;
               "
             >
-              ،،
-            </h2>
-            <p class="about-review-info-card-span ps-2">
-              "Byway's tech courses are top-notch! As someone who's always
-              looking to stay ahead in the rapidly evolving tech world, I
-              appreciate the up-to-date content and engaging multimedia.
-            </p>
-            <div class="d-flex ps-2">
-              <img
-                class="profile-img"
-                style="border-radius: 50%; margin-left: 5px"
-                src="images/Ellipse 613.png"
-                width="60px"
-                height="60px"
-              />
+              Jane Doe
               <div
-                class="ms-2 mb-3"
                 style="
-                  font-size: 18px;
-                  margin-top: 0px;
-                  font-weight: 600;
+                  font-weight: 400;
+                  font-size: 14px;
                   font-family: Inter;
-                  line-height: 28.8px;
+                  line-height: 21px;
+                  color: #334155;
                 "
               >
-                Jane Doe
-                <div
-                  style="
-                    font-weight: 400;
-                    font-size: 14px;
-                    font-family: Inter;
-                    line-height: 21px;
-                    color: #334155;
-                  "
-                >
-                  Designer
-                </div>
+                Designer
               </div>
             </div>
           </div>
-
-          <div
+        </div>
+        <div
             class="review-card ps-2 ms-3 col-10 col-md-5 col-lg-4"
             style="border: 1px solid #8b8b8b46; border-radius: 15px"
           >
@@ -1161,7 +1104,7 @@
               <img
                 class="profile-img"
                 style="border-radius: 50%; margin-left: 5px"
-                src="images/img4.jpg"
+                src="images/Ellipse 61.png"
                 width="60px"
                 height="60px"
               />
@@ -1194,13 +1137,15 @@
       </div>
     </section>
 
-
-    <section class="courses-section container  review-mobile" id="Courses">
+    <!-- ///////// Review Section Mobile ///////////// -->
+    <section class="courses-section container review-mobile" id="Courses">
       <div
         class="courses-header mb-4 d-flex justify-content-between align-items-center"
       >
-        <h3 class="courses-header-text ms-md-4">Top Courses</h3>
-        <a href="#" class="about-link me-md-5">See All</a>
+      <div>
+        <h3 class="courses-header-text">What Our Customer Say</h3>
+        <h3 class="courses-header-text">About us</h3>
+      </div>
       </div>
   
       <div class="d-flex row mx-0">
@@ -1226,7 +1171,7 @@
             </div>
             
             <div class="swiper-slide">
-              <div class="review-card ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px">
+              <div class="review-card card2 ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px;">
                 <h2 class="ps-2" style="color: #c208c2b6; font-size: 95px; font-weight: 700; letter-spacing: 0px; margin-top: -20px; margin-bottom: -15px;">،،</h2>
                 <p class="about-review-info-card-span ps-2">
                   "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.
@@ -1244,7 +1189,7 @@
             </div>
             
             <div class="swiper-slide">
-              <div class="review-card ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px">
+              <div class="review-card card3 ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px">
                 <h2 class="ps-2" style="color: #c208c2b6; font-size: 95px; font-weight: 700; letter-spacing: 0px; margin-top: -20px; margin-bottom: -15px;">،،</h2>
                 <p class="about-review-info-card-span ps-2">
                   "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.
@@ -1262,7 +1207,7 @@
             </div>
             
             <div class="swiper-slide">
-              <div class="review-card ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px">
+              <div class="review-card card4 ps-2 col-10 col-md-5 col-lg-4" style="border: 1px solid #8b8b8b46; border-radius: 15px">
                 <h2 class="ps-2" style="color: #c208c2b6; font-size: 95px; font-weight: 700; letter-spacing: 0px; margin-top: -20px; margin-bottom: -15px;">،،</h2>
                 <p class="about-review-info-card-span ps-2">
                   "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.
@@ -1285,170 +1230,308 @@
       </div>
     </section>
 
+    <!-- ///////// Contact Us Section //////////// -->
+    <section class="Contact mb-5 container" id="contact-us">
+      <div class="d-flex row mx-0 justify-content-between align-items-center">
+        <div
+          class="col-md-4 col-10 d-flex flex-column justify-content-center ps-md-5 mb-4"
+        >
+          <h2
+            style="
+              color: #cc6dea;
+              font-weight: 700;
+              font-size: 40px;
+              font-family: Roboto;
+              line-height: 48px;
+            "
+          >
+            Contact US
+          </h2>
+          <p
+            style="
+              font-weight: 400;
+              color: #000;
+              font-size: 16px;
+              font-family: Roboto;
+              line-height: 24px;
+            "
+          >
+            Cooperate with technical support to help us
+          </p>
+        </div>
 
-  
+        <div
+          class="col-md-6 col-12 mt-md-5 d-flex flex-column align-items-center"
+        >
+          <div class="mb-4 col-10">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #104728;
+                font-family: Roboto;
+              "
+              >Full Name</label
+            >
+            <div
+              class="form-control d-flex justify-content-between"
+              id="inputBox1"
+            >
+              <input
+                type="text"
+                required
+                id="exampleFormControlInput1"
+                placeholder="Esther Howard"
+                style="width: 100%; padding-right: 30px"
+                onfocus="addShadow('inputBox1')"
+                onblur="removeShadow('inputBox1')"
+              />
+              <span
+                class="clear-icon"
+                onclick="clearInput('exampleFormControlInput1')"
+                ><i class="fas fa-times"></i
+              ></span>
+            </div>
+            <span
+              class="ms-1"
+              style="
+                color: #00000080;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+              "
+              >Required</span
+            >
+          </div>
 
-   <!-- ///////// Contact Us Section //////////// -->
-   <section class="Contact mb-5" id="contact-us" style="width: 100%">
-    <div class="d-flex row mx-0 justify-content-center align-items-center">
-      <div class="col-md-4 col-10 d-flex flex-column justify-content-center  ps-md-5 mb-4">
-        <h2 style="color: #cc6dea; font-weight: 700; font-size: 40px; font-family: Roboto; line-height: 48px;">Contact US</h2>
-        <p style="font-weight: 400; color: #000; font-size: 16px; font-family: Roboto; line-height: 24px;">Cooperate with technical support to help us</p>
+          <div class="mb-4 col-10">
+            <label
+              for="exampleFormControlInput2"
+              class="form-label"
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #104728;
+                font-family: Roboto;
+              "
+              >Email</label
+            >
+            <div
+              class="form-control d-flex justify-content-between"
+              id="inputBox2"
+            >
+              <input
+                type="text"
+                required
+                id="exampleFormControlInput2"
+                placeholder="debra.holt@example.com"
+                style="width: 100%; padding-right: 30px"
+                onfocus="addShadow('inputBox2')"
+                onblur="removeShadow('inputBox2')"
+              />
+              <span
+                class="clear-icon"
+                onclick="clearInput('exampleFormControlInput2')"
+                ><i class="fas fa-times"></i
+              ></span>
+            </div>
+            <span
+              class="ms-1"
+              style="
+                color: #00000080;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+              "
+              >Required</span
+            >
+          </div>
+          <div class="mb-5 col-10">
+            <label
+              for="exampleFormControlInput3"
+              class="form-label"
+              style="
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #104728;
+                font-family: Roboto;
+              "
+              >Message</label
+            >
+            <div
+              class="form-control d-flex justify-content-between"
+              id="inputBox3"
+            >
+              <input
+                type="text"
+                required
+                id="exampleFormControlInput3"
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                style="width: 100%; padding-right: 30px"
+                onfocus="addShadow('inputBox3')"
+                onblur="removeShadow('inputBox3')"
+              />
+              <span
+                class="clear-icon"
+                onclick="clearInput('exampleFormControlInput3')"
+                ><i class="fas fa-times"></i
+              ></span>
+            </div>
+            <span
+              class="ms-1"
+              style="
+                color: #00000080;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+              "
+              >Required</span
+            >
+          </div>
+
+          <div class="d-flex justify-content-center col-10">
+            <button
+              class="btn col-md-5 col-8"
+              style="
+                background-color: #cc6dea;
+                color: #fff;
+                padding: 12px;
+                height: Hug (48px);
+                width: Fixed (240px);
+              "
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
       </div>
-
-      <div class="col-md-6 col-12 mt-md-5 d-flex flex-column align-items-center">
-        <div class="mb-4 col-10">
-          <label for="exampleFormControlInput1" class="form-label" style="font-weight: 500; font-size: 14px; line-height: 20px; color: #104728; font-family: Roboto;">Full Name</label>
-          <div class="form-control d-flex justify-content-between" id="inputBox1">
-            <input type="text" required id="exampleFormControlInput1" placeholder="Esther Howard" style="width: 100%; padding-right: 30px" onfocus="addShadow('inputBox1')" onblur="removeShadow('inputBox1')" />
-            <span class="clear-icon" onclick="clearInput('exampleFormControlInput1')"><i class="fas fa-times"></i></span>
-          </div>
-          <span class="ms-1" style="color: #00000080; font-family: Roboto; font-weight: 400; font-size: 12px; line-height: 16px;">Required</span>
-        </div>
-
-        <div class="mb-4 col-10">
-          <label for="exampleFormControlInput2" class="form-label" style="font-weight: 500; font-size: 14px; line-height: 20px; color: #104728; font-family: Roboto;">Email</label>
-          <div class="form-control d-flex justify-content-between" id="inputBox2">
-            <input type="text" required id="exampleFormControlInput2" placeholder="debra.holt@example.com" style="width: 100%; padding-right: 30px" onfocus="addShadow('inputBox2')" onblur="removeShadow('inputBox2')" />
-            <span class="clear-icon" onclick="clearInput('exampleFormControlInput2')"><i class="fas fa-times"></i></span>
-          </div>
-          <span class="ms-1" style="color: #00000080; font-family: Roboto; font-weight: 400; font-size: 12px; line-height: 16px;">Required</span>
-        </div>
-        <div class="mb-5 col-10">
-          <label for="exampleFormControlInput3" class="form-label" style="font-weight: 500; font-size: 14px; line-height: 20px; color: #104728; font-family: Roboto;">Message</label>
-          <div class="form-control d-flex justify-content-between" id="inputBox3">
-            <input type="text" required id="exampleFormControlInput3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit," style="width: 100%; padding-right: 30px" onfocus="addShadow('inputBox3')" onblur="removeShadow('inputBox3')" />
-            <span class="clear-icon" onclick="clearInput('exampleFormControlInput3')"><i class="fas fa-times"></i></span>
-          </div>
-          <span class="ms-1" style="color: #00000080; font-family: Roboto; font-weight: 400; font-size: 12px; line-height: 16px;">Required</span>
-        </div>
-
-        <div class="d-flex justify-content-center col-10">
-          <button class="btn col-md-5 col-8" style="background-color: #cc6dea; color: #fff; padding: 12px; height: Hug (48px); width: Fixed (240px);">Contact us</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
+    </section>
 
     <!-- ////////// Footer //////////// -->
     <section class="container mb-5">
       <div
-        style="
-          border: 1px #efe7f9 solid;
-          padding-top: 30px;
-          overflow-x: hidden;
-        "
+        style="border: 1px #efe7f9 solid; padding-top: 30px; overflow-x: hidden"
       >
-        <div class="row mx-0 d-flex ">
-<div class=" explore-parent-1 ">
+        <div class="row mx-0 d-flex">
+          <div class="explore-parent-1 ps-md-5">
+            <div class="e2">
+              <h2
+                class="mb-4"
+                style="
+                  font-family: Roboto;
+                  font-weight: 700;
+                  color: #cc6dea;
+                  line-height: 23.44px;
+                "
+              >
+                About us
+              </h2>
+              <p
+                style="
+                  font-family: Roboto;
+                  font-weight: 400;
+                  color: #232d42;
+                  line-height: 21.09px;
+                "
+              >
+                Phone: (+20) 01090991209
+              </p>
+              <p
+                style="
+                  font-family: Roboto;
+                  font-weight: 400;
+                  color: #232d42;
+                  line-height: 21.09px;
+                "
+              >
+                Email: conversationlist.edu@gmail.com
+              </p>
+              <p
+                style="
+                  font-family: Roboto;
+                  font-weight: 400;
+                  color: #232d42;
+                  line-height: 21.09px;
+                "
+              >
+                Location: Raden Office Rower - Jln. Inaja Dulu
+              </p>
+              <p
+                style="
+                  font-family: Roboto;
+                  font-weight: 400;
+                  color: #232d42;
+                  line-height: 21.09px;
+                "
+              >
+                No 212 Blok R16. Bandung, Indonesia
+              </p>
+              <p
+                class="mt-5 mb-4"
+                style="
+                  font-family: Roboto;
+                  font-weight: 400;
+                  color: #232d42;
+                  line-height: 21.09px;
+                "
+              >
+                Follow us:
+                <i
+                  class="fab fa-youtube icon"
+                  style="color: #ff0000; margin-left: 10px"
+                ></i>
+                <i class="fab fa-twitter icon" style="color: #054cff"></i>
+                <i class="fab fa-linkedin icon" style="color: #000000"></i>
+                <i
+                  class="fab fa-facebook-square icon"
+                  style="color: #054cff"
+                ></i>
+              </p>
+            </div>
 
-          <div class="e2">
-            <h2
-              class="mb-4"
-              style="
-                font-family: Roboto;
-                font-weight: 700;
-                color: #cc6dea;
-                line-height: 23.44px;
-              "
-            >
-              About us
-            </h2>
-            <p
-              style="
-                font-family: Roboto;
-                font-weight: 400;
-                color: #232d42;
-                line-height: 21.09px;
-              "
-            >
-              Phone: (+20) 01090991209
-            </p>
-            <p
-              style="
-                font-family: Roboto;
-                font-weight: 400;
-                color: #232d42;
-                line-height: 21.09px;
-              "
-            >
-              Email: conversationlist.edu@gmail.com
-            </p>
-            <p
-              style="
-                font-family: Roboto;
-                font-weight: 400;
-                color: #232d42;
-                line-height: 21.09px;
-              "
-            >
-              Location: Raden Office Rower - Jln. Inaja Dulu
-            </p>
-            <p
-              style="
-                font-family: Roboto;
-                font-weight: 400;
-                color: #232d42;
-                line-height: 21.09px;
-              "
-            >
-              No 212 Blok R16. Bandung, Indonesia
-            </p>
-            <p
-              class="mt-5 mb-4"
-              style="
-                font-family: Roboto;
-                font-weight: 400;
-                color: #232d42;
-                line-height: 21.09px;
-              "
-            >
-              Follow us:
-              <i
-                class="fab fa-youtube icon"
-                style="color: #ff0000; margin-left: 10px"
-              ></i>
-              <i class="fab fa-twitter icon" style="color: #054cff"></i>
-              <i class="fab fa-linkedin icon" style="color: #000000"></i>
-              <i class="fab fa-facebook-square icon" style="color: #054cff"></i>
-            </p>
+            <div class="explore-parent">
+              <div
+                class="col-lg-3 col-4 me-md-3 d-flex flex-column mb-4"
+                id="first"
+              >
+                <h2 class="mb-4 explore" id="Explore">Explore</h2>
+                <p class="mt-2 explore-content" id="Explore">About us</p>
+                <p class="explore-content" id="Explore">Courses</p>
+                <p class="explore-content" id="Explore">Contact us</p>
+              </div>
+
+              <div
+                class="col-lg-3 col-4 me-md-3 d-flex flex-column mb-4"
+                id="middle"
+              >
+                <h2 class="mb-4 explore" id="Category">Top Category</h2>
+                <p class="mt-2 explore-content" id="Explore">Programming</p>
+                <p class="explore-content" id="Explore">Business</p>
+                <p class="explore-content" id="Explore">Product Design</p>
+                <p class="explore-content" id="Explore">Marketing</p>
+              </div>
+
+              <div class="col-lg-3 col-4 d-flex flex-column mb-4" id="last">
+                <h2 class="mb-4 explore" id="Explore">Information</h2>
+                <p class="mt-2 explore-content" id="Explore">Membership</p>
+                <p class="explore-content" id="Explore">Terms of service</p>
+                <p class="explore-content" id="Explore">Privacy Policy</p>
+              </div>
+            </div>
           </div>
-
-          <div class="  explore-parent ">
-            <div class="col-md-3 col-4 me-md-3 d-flex flex-column mb-4" id="first">
-              <h2 class="mb-4 explore">Explore</h2>
-              <p class="mt-2 explore-content">About us</p>
-              <p class="explore-content">Courses</p>
-              <p class="explore-content">Contact us</p>
-            </div>
-        
-            <div class="col-md-3 col-4 me-md-3 d-flex flex-column mb-4" id="middle">
-              <h2 class="mb-4 explore">Top Category</h2>
-              <p class="mt-2 explore-content">Programming</p>
-              <p class="explore-content">Business</p>
-              <p class="explore-content">Product Design</p>
-              <p class="explore-content">Marketing</p>
-            </div>
-        
-            <div class="col-md-3 col-4 d-flex flex-column mb-4" id="last">
-              <h2 class="mb-4 explore">Information</h2>
-              <p class="mt-2 explore-content">Membership</p>
-              <p class="explore-content">Terms of service</p>
-              <p class="explore-content">Privacy Policy</p>
-            </div>
-          </div>
-        </div>
-
         </div>
 
         <div
-          class="mt-4"
-          style="width: 96%; height: 1px; background-color: #efe7f9"
+          class="mt-4 master"
+          style="height: 1px; background-color: #efe7f9;"
         ></div>
 
         <div
@@ -1475,7 +1558,7 @@
             >
           </div>
 
-          <div class="col-md-5 col-12 text-md-end mt-2 mt-md-0 mx-0">
+          <div class="col-lg-5 col-md-6 col-12 text-md-end mt-2 mt-md-4 mx-0">
             <p class="Footer-span" style="color: #232d42; font-weight: 500">
               2024 All Rights Reserved By Ubiquitous Learning
             </p>
